@@ -1,93 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RESUMEt</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+<link rel="stylesheet" href="style.css">
 </head>
-<style>
-    .onepiece{
-        display:grid;
-        align-items: center;
-        background-color: aqua;
-        padding: 30px;
-        width: 100%;
-        border-radius: 10px;
-    }
-    #Villai{
-        font-size: 20px;
-        font-weight: bold;
 
-    }
-</style>
 <body>
-    
-    <div class="onepiece">
-        <h2>Athish m</h2>
-        <p id="villai">villidyan villai,629801</p>
-        <p><a href="tel:+91 936140938">phone no</a></p>
-        <p><a href="mailto:athishajesh4@gmail">Gmail</a></p>
-    </div>
-     <hr>
-     <h3>summary statement</h3>
-     <p id="Villai">Motivated computer science student with a strong intrest programing . <br>
-    eager to apply tecnical knowlede and learn new technplogies</p>
-    <hr>
-    <h3>core quallification</h3>
-    <ul type="square">
-        <li>html</li>
-        <li>css</li>
-        <li>java</li>
-        <li>sql</li>
-    </ul>
-    <hr>
-    <h3 class="phoneno">education</h3>
-    <p><b>BE cse in dmi college of engineering</b></p>
-    <p><b>ME cse in saveetha engineering</b></p>
-    <hr>
-    <h3>work experience</h3>
-   <p><b>software developer</b></p>
-   <p>develop and maintain software using java,sql</p>
-   <hr>
-   <form action="">
-    <h1>form</h1>
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="user name" required><br>
-    <label for="gmail">Gmail</label>
-    <input type="email" id="mail" name="enter e mail"><br>
-    <label for="message">message</label>
-    <textarea name="user" id="message" rows="10" cols="10"></textarea>
-    <button type="summit">summit</button>
-   </form>
-   <hr>
-   <table>
-    <tr>
-        <th>name</th>
-        <th>rollno</th>
-        <th>contacts</th>
-    </tr>
-    <tr>
-        <td>athish</td>
-        <td>32</td>
-        <td>3667758</td>
-    </tr>
-    <tr>
-        <td>athish</td>
-        <td>32</td>
-        <td>3667758</td>
-    </tr>
-     <tr>
-        <td>athish</td>
-        <td>32</td>
-        <td>3667758</td>
-    </tr>
-     <tr>
-        <td>athish</td>
-        <td>32</td>
-        <td>3667758</td>
-    </tr>
 
-   </table>
+<nav>
+    <h2 class="logo">Portfolio</h2>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section id="home" class="slide">
+    <div class="content">
+        <h1>Hello, I'm <span>Athish</span></h1>
+        <p>Web Developer | Designer | Programmer</p>
+        <button onclick="scrollToSection('about')">Explore</button>
+    </div>
+</section>
+
+<section id="about" class="slide">
+    <div class="content">
+        <h1>About Me</h1>
+        <p>i am a computer science student with a strong interest in web development.</p>
+        <p>I am passionate about building modern websites using HTML, CSS and JavaScript.</p>
+        <P>I also have experience in java and sql.</P>
+        <p>seeking an opportunity to apply my skills and knowledge in a challenging and dynamic environment.</p>
+        </p>
+        <P>
+            <a href="https://github.com/thish-aa">GitHub</a>
+            <a href="https://www.linkedin.com/in/thish-aa">LinkedIn</a>
+        </P>
+    </div>
+</section>
+
+<section id="skills" class="slide">
+    <div class="content">
+        <h1>Skills</h1>
+        <div class="skills">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">java</div>
+            <div class="skill">sql</div>
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="slide">
+    <div class="content">
+        <h1>Projects</h1>
+        <div class="project-container">
+            <div class="project">Portfolio Website</div>
+            <div class="project">ML Prediction Model</div>
+            <div class="project">Customer Retention Analysis</div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="slide">
+    <div class="content">
+        <h1>Contact</h1>
+        <form>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Email">
+            <textarea placeholder="Message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</section>
+
+<script src="script.js"></script>
+
 </body>
 </html>
