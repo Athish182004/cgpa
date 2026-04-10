@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+         body {
+            font-family: Arial;
+            text-align: center;
+            background-color: #efebeb;
+             margin-top: 100px; 
+        }  
+
+         #star {
+            background: rgb(233, 238, 239);
+            padding: 20px;
+            width: 300px;
+            margin: auto;
+            border-radius: 10px;    
+            box-shadow: 0 0 10px gray;
+        } 
+
+        input {
+            width: 80%;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: rgb(236, 243, 239);
+            color: rgb(21, 19, 19);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: rgb(240, 230, 230);
+        }
+
+        #result {
+            margin-top: 15px;
+            font-size: 18px;
+            font-weight: bold;
+        } 
+
+
+    </style>
+    <script>
+        function convert(){
+            let cgpa = document.getElementById("cgpa").value;
+
+            if (cgpa === "" || cgpa < 0 || cgpa > 10) {
+                document.getElementById("result").innerHTML = "Enter valid CGPA (0-10)";
+                return;
+
+            }
+
+            let percentage = cgpa * 9.9;
+
+            document.getElementById("result").innerHTML = 
+                "Percentage: " + percentage.toFixed(2) + "%";
+        }
+    </script>
+
+</head>
+    
+<body>
+    <div id="star">
+        <h1>CGPA TO PERCENTAGE CONVERTER</h1>
+
+      <div id="hi">
+        <input type="number" id="cgpa" placeholder="Enter CGPA" step="0.01">
+
+        <br>
+
+        <button id="he" onclick="convert()">Convert</button>
+
+        <div id="result"></div>
+
+      </div>
+        
+    </div>
+
+    
+</body>
+</html>
